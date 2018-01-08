@@ -10,7 +10,8 @@ Add each file with its path on a new line in the file. Save it and run using "as
 
 ## Changelog
 
-###### 08-01-2018
+###### 08-01-2018 - v1.1/1.1a
 
 * added framework for cli-parameters
 * added -help and -f for fitting screen
+* -f needs w and h parameter, generates slide
