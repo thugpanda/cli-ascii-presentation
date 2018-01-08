@@ -8,6 +8,7 @@ vector<string> filenames;
 int lines = 0;
 
 string configstring = "┏━━━━━━━━                                                              ━━━━━━━━┓\n┃                                                                              ┃\n┃                                                                              ┃\n┃                                                                              ┃\n┃                                                                              ┃\n┃                                                                              ┃\n                                                                                \n                                                                                \n                                                                                \n                             Fit me to your screen                              \n                                                                                \n                                                                                \n                                                                                \n┃                                                                              ┃\n┃                                                                              ┃\n┃                                                                              ┃\n┃                                                                              ┃\n┃                                                                              ┃\n┗━━━━━━━━                                                              ━━━━━━━━┛\n";
+string helpstring = "CLI ASCII PRESENTATION 1.1\n\nWrite paths to slide .txt relative to pres_conf.yml, each file on a seperate line\nrun in same directory as pres_config.yml\n\n-h\tdisplay help\n-f\tshow fitting slide\n";
 
 void startupRead() {
 	string line;
@@ -47,6 +48,9 @@ int main(int argc, char *argv[]) {
 					system("clear");
 					cout << configstring << endl;
 					cin.ignore();
+				} else if(strncmp(argv[i], "-h", 2) == 0 || strncmp(argv[i], "-help", 5) == 0) {
+					cout << helpstring << endl;
+					exit(1);
 				}
 		}
 	}
