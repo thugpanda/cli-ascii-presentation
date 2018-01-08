@@ -6,3 +6,12 @@
 ### How To
 Create you textfiles in a subfolder. Use no "\n" at the end of a line, cli-ascii-presentation adds this for you. Create a pres_conf.yml-file in the location you want to run cli-ascii-presentation from.  
 Add each file with its path on a new line in the file. Save it and run using "ascii-pres".
+
+
+## Changelog
+
+###### 08-01-2018 - v1.1/1.1a
+
+* added framework for cli-parameters
+* added -help and -f for fitting screen
+* -f needs w and h parameter, generates slide
